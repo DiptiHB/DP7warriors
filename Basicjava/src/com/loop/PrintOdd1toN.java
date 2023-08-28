@@ -2,7 +2,7 @@ package com.loop;
 
 import java.util.Scanner;
 
-public class PrintEven1toN {
+public class PrintOdd1toN {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,16 +11,16 @@ public class PrintEven1toN {
 		int n=sc.nextInt();
 		for(int i=n;i<=n;i++)
 		{
-			if(i%2==0)
-			{
-				System.out.println(i+" is even number");
-			}
-			else
+			if(i%2!=0)
 			{
 				System.out.println(i+" is odd number");
 			}
+			else
+			{
+				System.out.println(i+" is even number");
+			}
 		}
-		sc.close();
+
 	}
 
 }
