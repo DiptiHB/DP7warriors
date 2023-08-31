@@ -2,27 +2,23 @@ package com.loop;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class RevDigitofNum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		long fact=1;
 		System.out.println("enter number: ");
 		int num=sc.nextInt();
-		for(int i=1;i<=num;i++)
+		
+		int rev=0;
+		for(int i=num;i!=0;i=i/10)
 		{
-			fact*=i;
+		 int rem=i%10;
+		 rev=rev*10+rem;
 		}
-		System.out.println("factorial of number is: "+fact);
-       sc.close();
+		System.out.println("the revese of given number digits are: "+rev );
+		
+        sc.close();
 	}
 
 }
-/* for(int i=num;i>0;i--)
- {
-  fact*=i; 
- }   
- 
- */
- 

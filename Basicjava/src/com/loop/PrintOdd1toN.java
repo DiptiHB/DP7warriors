@@ -20,6 +20,7 @@ public class PrintOdd1toN {
 				System.out.println(i+" is even number");
 			}
 		}
+		sc.close();
 
 	}
 
