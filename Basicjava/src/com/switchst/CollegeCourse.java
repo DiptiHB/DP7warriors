@@ -7,7 +7,7 @@ public class CollegeCourse {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		System.out.println("WELCOME TO REAM WORLD UNIVERSITY");
+		System.out.println("WELCOME TO DREAM WORLD UNIVERSITY");
 		System.out.println("enter your name: ");
 		String name=sc.next();
 		System.out.println("enter branch name you want to take admission: 1: MBA,2: MCA");
