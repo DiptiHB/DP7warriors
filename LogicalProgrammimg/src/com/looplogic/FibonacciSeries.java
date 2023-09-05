@@ -19,7 +19,7 @@ public class FibonacciSeries {
 	    	   f3=f1+f2;
 	       }
 	       
-sc.close();
+           sc.close();
 	}
 
 }
