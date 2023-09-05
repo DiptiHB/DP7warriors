@@ -7,17 +7,21 @@ public class Armstrong2 {
 		static void armstrongno(int num)
 		{   int count=0;
 			int original=num;
+			int rem=0;
 			double sum=0;
-			while(num>0)
+			for (int n=num;num!=0;num/=10)
 			{
-				
-				int rem=num%10;
 				count++;
-				System.out.println(rem);
-			
+			}
+			System.out.println(count);//3
+			 for(int i=0;i<=count;i++)
+			{
+			     rem=num%10;
 				sum=sum+(Math.pow(rem,count));
 				num/=10;
+				
 			}
+		
 			System.out.println(count);
 			System.out.println("sum="+sum);
 			if(original==sum)
