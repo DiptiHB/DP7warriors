@@ -8,7 +8,9 @@ public class Automorphic {
 		while(num>0)
 		{
 			if(num%10!=square%10)
+			{
 			return false;
+			}
 			num/=10;
 			square/=10;
 		}

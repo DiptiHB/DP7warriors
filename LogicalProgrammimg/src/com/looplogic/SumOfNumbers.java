@@ -13,16 +13,17 @@ public class SumOfNumbers {
 		System.out.println("enter numbers: ");
 		 int num=sc.nextInt();
 		 count++;
+		 
 		 if(num==0)
 		 {
 			 break;
 		 }
 		 sum=sum+num;
+		 
 		
-		
-		//sc.close();
 		}
       System.out.println("sum of numbers:"+sum);
+      System.out.println("zero appeared after "+count+" numbers");
      
 	}
 

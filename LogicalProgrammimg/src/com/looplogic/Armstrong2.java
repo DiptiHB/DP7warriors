@@ -7,30 +7,36 @@ public class Armstrong2 {
 		static void armstrongno(int num)
 		{   int count=0;
 			int original=num;
+		    int original2=num;
 			int rem=0;
-			double sum=0;
-			for (int n=num;num!=0;num/=10)
+			int sum=0;
+			while(num!=0)
 			{
-				count++;
-			}
-			System.out.println(count);//3
-			 for(int i=0;i<=count;i++)
-			{
-			     rem=num%10;
-				sum=sum+(Math.pow(rem,count));
-				num/=10;
 				
-			}
-		
-			System.out.println(count);
-			System.out.println("sum="+sum);
-			if(original==sum)
+		      count++;
+		      num/=10;
+				
+			}	
+			while(original!=0)
 			{
-				System.out.println(original+" is Armstrong number");
+				int pow=1;
+			    rem=original%10;
+			    for(int i=1;i<=count;i++)
+			    {
+			    	pow=pow*rem;
+			    }
+				sum=sum+pow;
+				original=original/10;
+			}
+				
+		    System.out.println("sum="+sum);
+			if(original2==sum)
+			{
+				System.out.println(original2+" is Armstrong number");
 			}
 			else
 			{
-				System.out.println(original+" is not armstrong number");
+				System.out.println(original2+" is not armstrong number");
 			}
 		}
 		public static void main(String[] args) {
@@ -38,8 +44,7 @@ public class Armstrong2 {
 			System.out.println("enter number: " );
 			int num=sc.nextInt();
 			armstrongno(num);
-			
-			
+			sc.close();			
 
 	}
 

@@ -6,21 +6,31 @@ public class ReversenumSeries {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int result=0;
+		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter number: ");
 		int num=sc.nextInt();
 		int original=num;
-		
+		int rem=0;
 		int rev=0;
-		for(int i=num;i!=0;i=i/10)
+		int result=0;
+		while(num!=0)
 		{
-		 int rem=i%10;
-		 rev=rev*10+rem;
+			rem=num%10;
+			rev=rev*10+rem;
+			num/=10;		
 		}
+		
 		System.out.println("the revese of given number digits are: "+rev );
 		result=original-rev;
-		System.out.println("number: "+num+"--->"+ result);
+		if(result>0)
+		{
+		System.out.println("number: "+original+"--->"+ result);
+		}
+		else
+		{
+			System.out.println("0");
+		}
         sc.close();
 	}
 
