@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class ExtactDigit {
 
 	static void extract(int num)
-	{
+	{ 
+		int sum=0;
 		System.out.println("the digits in number are: "+num);
 		while(num!=0)
 		{
-			System.out.println(num%10);
-			
+			int rem=(num%10);
+		    sum=sum+rem;
 			num/=10;
 			
 		}

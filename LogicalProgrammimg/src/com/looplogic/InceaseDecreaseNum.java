@@ -30,10 +30,11 @@ public class InceaseDecreaseNum {
            {
         	   System.out.println("number is incresing ");
            }
-           else
+           else 
            {
         	   System.out.println("number is decresing ");
            }
+          
 	}
 
 }

@@ -5,23 +5,23 @@ public class PrimeNumber400to300 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
- int num=300,count;
- for(int i=400;i>=num;i--)
+ int num=400,flag=0;
+ for(int i=300;i<=num;i++)
  {
-     count=0;
-	 for(int j=2;j<=2;j++)
+     flag=0;
+	 for(int j=300;j<=i;j++)
 	 {
 		 if(i%j==0)
 		 {
-			 count++;
-			 break;
+			 flag=1;
+			
 		 }
 	 }
-	 if(count==0)
+	 if(flag==0)
 	 {
 		 System.out.println(i);
 	 }
- }
+  }
  
  
 	}
