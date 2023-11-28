@@ -1,8 +1,7 @@
 package com.interfaceadvance;
 interface fold
 {
-	
-void foldable();	
+	void foldable();	
 }
 class Mobile
 {

@@ -17,9 +17,10 @@ public class PrimeNumber400to300 {
 			
 		 }
 	 }
+		
 	 if(flag==0)
-	 {
-		 System.out.println(i);
+     {
+		System.out.println(i);
 	 }
   }
  

@@ -9,16 +9,16 @@ public class PrintEven1toN {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter number: ");
 		int n=sc.nextInt();
-		for(int i=n;i<=n;i++)
+		for(int i=1;i<=n;i++)
 		{
 			if(i%2==0)
 			{
-				System.out.println(i+" is even number");
+				System.out.println(i);
 			}
-			else
-			{
-				System.out.println(i+" is odd number");
-			}
+//			else
+//			{
+//				System.out.println(i+" is odd number");
+//			}
 		}
 		sc.close();
 	}

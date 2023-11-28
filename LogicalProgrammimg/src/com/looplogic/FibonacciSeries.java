@@ -13,7 +13,7 @@ public class FibonacciSeries {
 	       int f1,f2=0,sum=1;
 	       for(int i=1;i<=num;i++)
 	       {
-	    	   System.out.println(""+sum+"");
+	    	   System.out.print(" "+sum+" ");
 	    	   f1=f2;
 	    	   f2=sum;
 	    	   sum=f1+f2;

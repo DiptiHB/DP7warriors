@@ -17,7 +17,7 @@ public class SumofFactors {
 		{
 			if(num%i==0)
 			{
-				System.out.println(i);
+				System.out.print(""+i+" ");
 				sum=sum+i;
 			
 		      if(i>high)
@@ -27,7 +27,7 @@ public class SumofFactors {
 			}
 			
 		}
-		System.out.println("sum= "+sum);
+		System.out.println("\nsum= "+sum);
 		System.out.println("higher factor is: "+high);
 		
 	

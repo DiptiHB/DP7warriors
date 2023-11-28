@@ -1,7 +1,7 @@
 package com.finaldemo;
 class Developer
 {
-	 final String cname;
+	final String cname;
 	final float salary;
 	final int noOfHrs;
 	String ename;

@@ -14,11 +14,11 @@ public class KrishnamurthyNum {
 		{
 			int rem=num%10;
 			fact=1;
-					for(int i=1;i<=rem;i++)
-					{
-						fact*=i;
+			for(int i=1;i<=rem;i++)
+			{
+				fact*=i;
 						
-					}
+			}
 			sum+=fact;
 			num/=10;
 		}

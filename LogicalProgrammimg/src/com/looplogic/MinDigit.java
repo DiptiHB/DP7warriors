@@ -11,7 +11,7 @@ public class MinDigit {
 		int rem1=0;
 		while(num!=0)
 		{	
-			rem1=num%10;
+		 rem1=num%10;
 		 if(rem1<rem)
 		 {
 			min=rem1; 

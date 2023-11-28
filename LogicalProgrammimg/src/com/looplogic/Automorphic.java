@@ -5,6 +5,7 @@ public class Automorphic {
 	static boolean automorphic(int num)
 	{
 		int square=num*num;
+		System.out.println(square);
 		while(num>0)
 		{
 			if(num%10!=square%10)
