@@ -1,78 +1,205 @@
 package com.pojo;
 
 public class User {
-	private String userName;
-	private String adharCard;
-	private String panCard;
-	private String email;
-	private String mobileNumber;
-	private String address;
+	private int userid;
+	private String username;
+	private String useremail;
+	private String usercontact;
+	private String userdob;
+	private String userpan;
+	private String useraadhar;
+	private String useraddress;
+	private String userpass;
+	private String userrole;
+	private Account account;
 
 	public User() {
 		super();
 	}
 
-	public User(String userName, String adharCard, String panCard, String email, String newMobileNumber, String address) {
+	public User(String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass, Account account) {
 		super();
-		this.userName = userName;
-		this.adharCard = adharCard;
-		this.panCard = panCard;
-		this.email = email;
-		this.mobileNumber = newMobileNumber;
-		this.address = address;
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
+		this.account = account;
 	}
 
-	public String getUserName() {
-		return userName;
+	public User(String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass, String userrole, Account account) {
+		super();
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
+		this.userrole = userrole;
+		this.account = account;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public User(int userid, String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass, String userrole, Account account) {
+		super();
+		this.userid = userid;
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
+		this.userrole = userrole;
+		this.account = account;
 	}
 
-	public String getAdharCard() {
-		return adharCard;
+	public Account getAccount() {
+		return account;
 	}
 
-	public void setAdharCard(String adharCard) {
-		this.adharCard = adharCard;
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 
-	public String getPanCard() {
-		return panCard;
+	// constructor will be called while inserting rows in userinfo table
+	public User(String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass) {
+		super();
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
 	}
 
-	public void setPanCard(String panCard) {
-		this.panCard = panCard;
+	// constructor will be called to fetch userinfo table rows into arraylist and
+	// show it in console
+	public User(int userid, String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass, String userrole) {
+		super();
+		this.userid = userid;
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
+		this.userrole = userrole;
 	}
 
-	public String getEmail() {
-		return email;
+	public User(int userid, String username, String useremail, String usercontact, String userdob, String userpan,
+			String useraadhar, String useraddress, String userpass) {
+		super();
+		this.userid = userid;
+		this.username = username;
+		this.useremail = useremail;
+		this.usercontact = usercontact;
+		this.userdob = userdob;
+		this.userpan = userpan;
+		this.useraadhar = useraadhar;
+		this.useraddress = useraddress;
+		this.userpass = userpass;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public int getUserid() {
+		return userid;
 	}
 
-	public String getMobileNumber() {
-		return mobileNumber;
+	public void setUserid(int userid) {
+		this.userid = userid;
 	}
 
-	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
+	public String getUsername() {
+		return username;
 	}
 
-	public String getAddress() {
-		return address;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public String getUseremail() {
+		return useremail;
+	}
+
+	public void setUseremail(String useremail) {
+		this.useremail = useremail;
+	}
+
+	public String getUsercontact() {
+		return usercontact;
+	}
+
+	public void setUsercontact(String usercontact) {
+		this.usercontact = usercontact;
+	}
+
+	public String getUserdob() {
+		return userdob;
+	}
+
+	public void setUserdob(String userdob) {
+		this.userdob = userdob;
+	}
+
+	public String getUserpan() {
+		return userpan;
+	}
+
+	public void setUserpan(String userpan) {
+		this.userpan = userpan;
+	}
+
+	public String getUseraadhar() {
+		return useraadhar;
+	}
+
+	public void setUseraadhar(String useraadhar) {
+		this.useraadhar = useraadhar;
+	}
+
+	public String getUseraddress() {
+		return useraddress;
+	}
+
+	public void setUseraddress(String useraddress) {
+		this.useraddress = useraddress;
+	}
+
+	public String getUserpass() {
+		return userpass;
+	}
+
+	public void setUserpass(String userpass) {
+		this.userpass = userpass;
+	}
+
+	public String getUserrole() {
+		return userrole;
+	}
+
+	public void setUserrole(String userrole) {
+		this.userrole = userrole;
 	}
 
 	@Override
 	public String toString() {
-		return "User [userName=" + userName + ", adharCard=" + adharCard + ", panCard=" + panCard + ", email=" + email
-				+ ", mobileNumber=" + mobileNumber + ", address=" + address + "]";
+		return "\nUser ID\t\t: " + userid + "\nName\t\t: " + username + "\nE-Mail\t\t: " + useremail + "\nContact\t\t: "
+				+ usercontact + "\nDOB\t\t: " + userdob + "\nPan No\t\t: " + userpan + "\nAadhar\t\t: " + useraadhar
+				+ "\nAddress\t\t: " + useraddress + "\nPass\t\t: " + userpass + "\nRole\t\t: " + userrole 
+				+ "\n"+ account;
 	}	
 }
